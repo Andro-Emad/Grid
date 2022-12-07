@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.page {
+  padding: 10px;
+  display: grid;
+  gap: 7px;
+  line-height: 1.5;
+  background-color: #ddd;
+  grid-template-areas:
+    "one one one one one one two two two three three three"
+    "one one one one one one two two two three three three"
+    "one one one one one one two two two three three three"
+    "one one one one one one two two two three three three"
+    "four four four five five five five five five three three three"
+    "four four four five five five five five five three three three"
+    "four four four five five five five five five three three three"
+    "four four four five five five five five five three three three"
+    "four four four six six six six six six three three three"
+    "four four four six six six six six six three three three"
+    "four four four six six six six six six three three three"
+    "four four four six six six six six six three three three"
+    "seven seven seven eight eight eight nine nine nine ten ten ten"
+    "seven seven seven eight eight eight nine nine nine ten ten ten"
+    "seven seven seven eight eight eight nine nine nine ten ten ten"
+    "seven seven seven eight eight eight nine nine nine ten ten ten";
+}
+.one {
+  grid-area: one;
+  background-color: white;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.ten {
+  grid-area: ten;
+}
+.one,
+.two,
+.four,
+.six,
+.seven,
+.nine,
+.ten {
+  padding: 10px;
+  background-color: white;
+  border-bottom: 4px solid red;
+}
+.three,
+.five,
+.eight {
+  padding: 10px;
+  border-bottom: 4px solid red;
+  background-color: black;
+  color: white;
+}
+h3 {
+  color: #666;
+}
+p:last-of-type {
+  color: #666;
+}
